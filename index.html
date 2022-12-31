@@ -1,0 +1,209 @@
+<style>
+body {
+background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.hexagon-gallery {
+  margin: auto;
+  margin-top: 40px;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-auto-rows: 170px;
+  grid-gap: 10px;
+  padding-bottom: 90px;
+}
+
+.hex {
+  display: flex;
+  position: relative;
+  width: 199px;
+  height: 225px;
+  background-color: #424242;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.hex:before{
+  content:'';
+  position:absolute;
+  opacity:0.5;
+  width:350px;
+  height:70px;
+  background:white;
+  top:0;
+  left:0;
+  z-index:1;
+  transform:rotate(45deg);
+  transition:transform 0.5s;
+}
+
+.hex:hover:before{
+  transform: translate(-100px,400%) rotate(45deg);
+  transition:transform 0.5s;
+}
+
+.hex:hover{
+  transform:scale(1.2);
+  transition:transform 0.2s;
+  z-index:10;
+}
+
+.hex:first-child {
+  grid-row-start: 1;
+  grid-column: 3 / span 2;
+}
+
+.hex:nth-child(2) {
+  grid-row-start: 1;
+  grid-column: 5 / span 2;
+}
+
+.hex:nth-child(3) {
+  grid-row-start: 1;
+  grid-column: 7 / span 2;
+}
+
+.hex:nth-child(4) {
+  grid-row-start: 2;
+  grid-column: 2 / span 2;
+}
+
+.hex:nth-child(5) {
+  grid-row-start: 2;
+  grid-column: 4 / span 2;
+}
+
+.hex:nth-child(6) {
+  grid-row-start: 2;
+  grid-column: 6 / span 2;
+}
+
+.hex:nth-child(7) {
+  grid-row-start: 2;
+  grid-column: 8 / span 2;
+}
+
+.hex:nth-child(8) {
+  grid-row-start: 3;
+  grid-column: 1 / span 2;
+}
+
+.hex:nth-child(9) {
+  grid-row-start: 3;
+  grid-column: 3 / span 2;
+}
+
+.hex:nth-child(10) {
+  grid-row-start: 3;
+  grid-column: 5 / span 2;
+}
+.hex:nth-child(11) {
+  grid-row-start: 3;
+  grid-column: 7 / span 2;
+}
+.hex:nth-child(12) {
+  grid-row-start: 3;
+  grid-column: 9 / span 2;
+}
+.hex:nth-child(13) {
+  grid-row-start: 4;
+  grid-column: 2 / span 2;
+}
+.hex:nth-child(14) {
+  grid-row-start: 4;
+  grid-column: 4 / span 2;
+}
+.hex:nth-child(15) {
+  grid-row-start: 4;
+  grid-column: 6 / span 2;
+}
+.hex:nth-child(16) {
+  grid-row-start: 4;
+  grid-column: 8 / span 2;
+}
+.hex:nth-child(17) {
+  grid-row-start: 5;
+  grid-column: 3 / span 2;
+}
+.hex:nth-child(18) {
+  grid-row-start: 5;
+  grid-column: 5 / span 2;
+}
+.hex:nth-child(19) {
+  grid-row-start: 5;
+  grid-column: 7 / span 2;
+}
+
+</style>
+<body>
+<section class="hexagon-gallery">
+  <div class="hex">
+    <img src="images/kirbygb.jpg" id="clipped">
+  </div>
+  <div class="hex">
+    <img src="images/kirby2.jpg" id="clipped">
+  </div>
+  <div class="hex">
+    <img src="images/smtv.jpeg">
+  </div>
+  <div class="hex">
+    <img src="images/loophero.jpg" id="clipped">
+  </div>
+    <div class="hex">
+    <img src="images/hm3.jpg" id="clipped">
+  </div>
+    <div class="hex">
+    <img src="images/persona4.jpeg" id="clipped">
+  </div>
+  <div class="hex">
+    <img src="images/kirby.jpg" id="clipped">
+  </div>
+  <div class="hex">
+    <img src="images/banjo.png" id="clipped">
+  </div>
+  <div class="hex">
+    <img src="images/tacticsogre.jpg" id="clipped">
+  </div>
+  <div class="hex">
+    <img src="images/elden.jpg" id="clipped">
+  </div>
+  <div class="hex">
+    <img src="images/3hopes.jpg" id="clipped">
+  </div>
+  <div class="hex">
+    <img src="images/cult.jpg" id="clipped">
+  </div>
+  <div class="hex">
+    <img src="images/cuphead.jpg" id="clipped">
+  </div>
+  <div class="hex">
+    <img src="images/frog.jpg" id="clipped">
+  </div>
+  <div class="hex">
+    <img src="images/krusty.jpg" id="clipped">
+  </div>
+  <div class="hex">
+    <img src="images/monkeyisland.jpg" id="clipped">
+  </div>
+  <div class="hex">
+    <img src="images/livealive.jpg" id="clipped">
+  </div>
+  <div class="hex">
+    <img src="images/tunic.jpg" id="clipped">
+  </div>
+  <div class="hex">
+    <img src="images/ffv.jpg" id="clipped">
+  </div>
+<!--   <div class = "shadow"></div> -->
+</section>
+</body>
+
